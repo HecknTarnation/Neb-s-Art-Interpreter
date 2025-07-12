@@ -1,5 +1,18 @@
-# 10 10
+# 2 2
 ? num
+@ main_loop
+@ row_loop
+@ add_loop
 + 10
-- 10
+->< add_loop 10
+>
+->< row_loop 255
+&< 100
+>&
+v
+@ move_left
+<
+->< move_left 255
+&< 100
+>&
 ~
