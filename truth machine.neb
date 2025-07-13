@@ -1,0 +1,13 @@
+| Truth machine
+# 1 1
+? num
+=&
+<&
+&< 1
+.=
+->. output_loop
+~
+
+@ output_loop
+; 100
+-> output_loop
