@@ -232,8 +232,9 @@ public class Main {
                     break;
                 }
                 case MOVE_LEFT:{
+                    short amount = token.params[0] != null ? Short.parseShort(token.params[0]) : 1;
                     try{
-                        x--;
+                        x -= amount;
                         short t = grid[y][x];
                     }catch(ArrayIndexOutOfBoundsException e){
                         x++;
@@ -241,8 +242,9 @@ public class Main {
                     break;
                 }
                 case MOVE_RIGHT:{
+                    short amount = token.params[0] != null ? Short.parseShort(token.params[0]) : 1;
                     try{
-                        x++;
+                        x += amount;
                         short t = grid[y][x];
                     }catch(ArrayIndexOutOfBoundsException e){
                         x--;
@@ -250,8 +252,9 @@ public class Main {
                     break;
                 }
                 case MOVE_DOWN:{
+                    short amount = token.params[0] != null ? Short.parseShort(token.params[0]) : 1;
                     try{
-                        y++;
+                        y += amount;
                         short t = grid[y][x];
                     }catch(ArrayIndexOutOfBoundsException e){
                         y--;
@@ -259,8 +262,9 @@ public class Main {
                     break;
                 }
                 case MOVE_UP:{
+                    short amount = token.params[0] != null ? Short.parseShort(token.params[0]) : 1;
                     try{
-                        y--;
+                        y -= amount;
                         short t = grid[y][x];
                     }catch(ArrayIndexOutOfBoundsException e){
                         y++;
